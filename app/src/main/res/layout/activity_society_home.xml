@@ -1,0 +1,111 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/societyBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:stretchColumns="*"
+    android:shrinkColumns="true"
+    >
+
+    <TextView
+        android:id="@+id/societyTitle"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.2"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/subscribeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscribe"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@color/light_navy"
+        android:layout_weight="0.44" />
+
+        <ImageButton
+            android:id="@+id/exampleSocietyButton2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_apple"
+            android:background="#00ffffff"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/societyDescription"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"/>
+
+    <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_weight="0.08">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ImageButton
+                android:id="@+id/exampleSocietyButton3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_apple"
+                android:background="@color/light_navy"
+                android:layout_column="0"
+             />
+
+                <ImageButton
+            android:id="@+id/exampleSocietyButton1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_apple"
+            android:background="@color/light_navy"
+            android:layout_column="1"/>
+
+                <ImageButton
+            android:id="@+id/exampleSocietyButton4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_apple"
+            android:background="@color/light_navy"
+            android:layout_column="2"/>
+            </TableRow>
+        </TableLayout>
+
+</LinearLayout>
+

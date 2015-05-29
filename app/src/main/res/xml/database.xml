@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<database>
+    <society name="Art Society">
+        <keyword>paint</keyword>
+        <keyword>draw</keyword>
+        <keyword>pencil</keyword>
+        <keyword>brush</keyword>
+        <keyword>sculpture</keyword>
+    </society>
+    <society name="Chess Society">
+        <keyword>knight</keyword>
+        <keyword>nerds</keyword>
+        <keyword>skill</keyword>
+        <keyword>board game</keyword>
+    </society>
+    <society name="Law Society">
+        <keyword>nerds</keyword>
+        <keyword>court</keyword>
+        <keyword>property</keyword>
+    </society>
+    <society name="Basketball Society">
+        <keyword>ball games</keyword>
+        <keyword>court</keyword>
+    </society>
+    <society name="Film Making Society">
+        <keyword>camera</keyword>
+        <keyword>directing</keyword>
+    </society>
+    <society name="Philosophy Society">
+        <keyword>Descartes</keyword>
+        <keyword>Kant</keyword>
+    </society>
+    <society name="Photo Soc">
+        <keyword>Camera</keyword>
+        <keyword>Light</keyword>
+    </society>
+    <society name="Pole Dancing Soc">
+        <keyword>pole</keyword>
+        <keyword>fitness</keyword>
+    </society>
+    <society name="Chinese Soc">
+        <keyword>World</keyword>
+        <keyword>Asia</keyword>
+    </society>
+    <society name="ShockSoc">
+        <keyword>electronics</keyword>
+        <keyword>Circuits</keyword>
+    </society>
+    <society name="YUSnow">
+        <keyword>Ski</keyword>
+        <keyword>Snowboard</keyword>
+    </society>
+    <society name="York Student Cinema">
+        <keyword>Film</keyword>
+        <keyword>Popcorn</keyword>
+    </society>
+</database>

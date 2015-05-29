@@ -1,0 +1,163 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.socbox.richard.discover.DiscoverFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Space
+        android:id="@+id/action_height"
+        android:layout_width="fill_parent"
+        android:layout_height= "?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/discoverScrollView"
+    android:background="@color/light_navy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="35sp"
+            android:background="#ff1e4a6e"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-thin"/>
+
+        <HorizontalScrollView
+            android:id="@+id/imageScroll1"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:id="@+id/imageChain1"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/socName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Society Name"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif-thin"/>
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="170dp"
+           android:orientation="horizontal">
+
+            <ImageView
+               android:scaleType="centerCrop"
+               android:id="@+id/selectedImage2"
+               android:layout_width="match_parent"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:layout_gravity="center_horizontal"
+               android:background="@drawable/border"
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="1dp"/>
+
+           <ImageView
+               android:scaleType="centerCrop"
+               android:id="@+id/selectedImage3"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center_horizontal"
+               android:background="@drawable/border"
+               android:layout_marginLeft="1dp"
+               android:layout_marginRight="2dp"/>/>
+       </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/dark_navy"
+            android:text="Society Name - Video Name"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:text=" Navigation Controls "/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/dark_navy"
+            android:textColor="@color/white"
+            android:text="Keywords of Wisdom"
+            android:fontFamily="sans-serif-thin"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:divider="@drawable/text_divider"
+                android:showDividers="middle"
+                android:id="@+id/discoTextScroller"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

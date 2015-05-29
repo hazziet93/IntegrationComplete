@@ -1,0 +1,70 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/societyBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/test1"
+    >
+
+    <TextView
+        android:id="@+id/societyTitle"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TableRow>
+        <ImageButton
+            android:id="@+id/exampleSocietyButton1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/androidicontest"
+            />
+        <ImageButton
+            android:id="@+id/exampleSocietyButton2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/androidicontest"
+            />
+    </TableRow>
+    <Button
+        android:id="@+id/subscribeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    <TableRow>
+        <ImageButton
+            android:id="@+id/exampleSocietyButton3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/androidicontest"
+            />
+        <ImageButton
+            android:id="@+id/exampleSocietyButton4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/androidicontest"
+            />
+    </TableRow>
+    <TextView
+        android:id="@+id/societyDescription"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Back to Navigator Page"
+        />
+
+
+
+
+</TableLayout>

@@ -1,0 +1,141 @@
+package com.iteration2.mark.iteration3loginslides;
+
+        import android.app.Activity;
+        import android.app.SearchManager;
+        import android.content.ComponentName;
+        import android.content.Context;
+        import android.content.pm.ComponentInfo;
+        import android.content.res.Resources;
+        import android.support.v7.app.ActionBarActivity;
+        import android.os.Bundle;
+        import android.util.Log;
+        import android.view.Menu;
+        import android.view.MenuItem;
+        import android.widget.SearchView;
+
+        import org.w3c.dom.Document;
+        import org.w3c.dom.NodeList;
+        import org.xml.sax.SAXException;
+
+        import java.io.File;
+        import java.io.IOException;
+
+        import javax.xml.parsers.DocumentBuilder;
+        import javax.xml.parsers.DocumentBuilderFactory;
+        import javax.xml.parsers.ParserConfigurationException;
+        import javax.xml.xpath.XPath;
+        import javax.xml.xpath.XPathConstants;
+        import javax.xml.xpath.XPathExpression;
+        import javax.xml.xpath.XPathExpressionException;
+        import javax.xml.xpath.XPathFactory;
+
+/*
+Claritas: 'Clarity Through Innovation.'
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Project: SocBox
+Module: Search Function
+Code File Name: SearchPage.java
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Description: This class will eventually be incorporated as a module in the Navigator page.
+It allows the user to enter a Society query which will be used to search the XML database of
+Societies. Upon entering a query and pressing search they will be taken to the SearchResults page
+and displayed the results of their query. The search has been designed to take multiple words and
+will search the name and keywords of each database entry for each of the entered words. The search
+is case-insensitive, allows for spaces either side of the query as well as multiple spaces between
+words. It also ignores the words soc and society so that including these words in the search (e.g.
+"chess society") will not cause every result with the word society to appear in the results.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Initial Authors: Richard Millen
+				 Leo Holt
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Change History:
+Version: 0.1
+Author: Richard Millen
+Change: Created original version
+Date: 11/03/15
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Traceability:
+
+[D/SFF/01/01] The user can select the search bar field on the navigator screen which
+will bring up the generic android keyboard on the bottom half of the screen.
+
+[D/SFF/02/01] When the keyboard is open the search bar and ‘GO’ button are
+centred in the vertical centre of the remaining portion of the screen.
+
+[D/SFF/03/01] The user can type any number of words (up to the search box’s
+maximum character limit) and press the ‘GO’ button in order to progress to the
+results page.
+
+[D/SFF/07/01] If a valid string has been entered and the ‘GO’ button pressed, the
+Navigator page will transition to the search results page.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Other Information:
+Searchable configuration requires other documents such as AndroidManifest and searchable.xml to
+be set up correctly.
+
+Possible Improvements:
+- Activate Voice Search
+- Custom search suggestions from database
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+public class SearchPage extends Activity {
+
+    //===========================================================================================%
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_search_page);
+
+        //The AndroidManifest has a major part in setting up the searchable configuration
+        //used in these activities.
+
+        //Tying the searchable configuration to the SearchView in this activity layout
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView)findViewById(R.id.masterSearch);
+
+        //Sets up searchResults class to receive the query sent from the SearchView
+        ComponentName resultsComponent = new ComponentName
+                ("com.socbox.richard.searchfunction","SearchResults");
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+    }
+
+    //===========================================================================================%
+    //Everything beyond this point is generated by the activity upon creation
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_search_page, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}

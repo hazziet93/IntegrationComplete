@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context="com.socbox.richard.searchfunction.SearchResults">
+
+    <TextView
+        android:id="@+id/results_title"
+        android:text="@string/search_results_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-thin"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+    </TextView>
+
+
+    <ListView
+        android:layout_below="@id/results_title"
+        android:id="@+id/mainlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </ListView>
+
+    <TextView
+
+        android:id="@+id/noresultstext"
+        android:layout_below="@id/results_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/no_results_text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/no_results_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="visible">
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+    <LinearLayout
+        tools:context=".UserHome$HomeFragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="fill_parent"
+        android:id="@+id/action_height"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:background="#ffa9bcc7">
+
+    <TextView
+        android:id="@+id/subscriptionsTitle"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/subscriptionsTitle"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"/>
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:layout_height="165dp"
+        android:layout_width="match_parent"
+        android:id="@+id/subscriptionsListView"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:visibility="visible"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/recentUpdatesTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:text="@string/recentUpdatesTitle"
+        android:gravity="center"
+        android:fontFamily="sans-serif-thin"/>
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/recentUpdatesListView"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:visibility="visible"
+        android:layout_weight="1"
+        android:background="@drawable/border"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity2"
+    android:background="@color/light_navy">
+
+    <!--  Title  -->
+
+    <TextView
+        android:text="@string/video_bank"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/VideoBank"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-thin" />
+
+    <!--  Listview  -->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoListView"
+        android:layout_below="@+id/VideoBank"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"/>
+
+</RelativeLayout>

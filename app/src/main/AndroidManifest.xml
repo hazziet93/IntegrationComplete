@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iteration2.mark.iteration3loginslides" >
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name= "android.permission.INTERACT_ACROSS_USERS_FULL"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResults" />
+        </activity>
+        <activity
+            android:name=".SearchResults"
+            android:label="@string/title_activity_search_results" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name=".LoggedIn"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".UserHome"
+            android:label="@string/app_name">
+        </activity>
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme" >
+    <activity
+        android:name=".LoginPage"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".SocietyHome"
+        android:label="@string/title_activity_society_home_page" >
+    </activity>
+    <activity
+        android:name=".ExampleActivity"
+        android:label="@string/title_activity_example" >
+    </activity>
+    <activity
+        android:name=".VideoBankHandler"
+        android:label="@string/title_activity_video_bank_handler" >
+    </activity>
+    <activity
+        android:name=".callVideoHandler"
+        android:label="@string/title_activity_call_video_handler" >
+    </activity>
+    <activity
+        android:name=".PresentationSlides"
+        android:label="presentationSlides" >
+    </activity>
+    <activity
+        android:name=".SlideA"
+        android:label="slideA" >
+    </activity>
+    <activity
+        android:name=".SlideB"
+        android:label="slideB" >
+    </activity>
+    <activity
+        android:name=".SlideC"
+        android:label="slideC" >
+    </activity>
+    <activity
+        android:name=".SlideD"
+        android:label="slideD" >
+    </activity>
+    <activity
+        android:name=".SlideE"
+        android:label="slideE" >
+    </activity>
+    <activity
+        android:name=".SlideF"
+        android:label="slideF" >
+    </activity>
+    <activity
+        android:name=".SlideG"
+        android:label="slideG" >
+    </activity>
+    <activity
+        android:name=".SlideH"
+        android:label="slideH" >
+    </activity>
+    <activity
+        android:name=".SlideI"
+        android:label="slideI" >
+    </activity>
+    <activity
+        android:name=".ImageBank"
+        android:label="ImageBank" >
+    </activity>
+    <activity
+        android:name=".ComPresSlideMethods"
+        android:label="ComPresSlideMethods">
+    </activity>
+</application>
+
+</manifest>
+

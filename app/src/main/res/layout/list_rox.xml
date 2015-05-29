@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This sets the style for all rows in the listView-->
+<TextView
+    android:background="@color/light_navy"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:id="@+id/rowTextView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</TextView>

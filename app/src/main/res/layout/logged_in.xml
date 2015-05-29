@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Login successful"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logged in as:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/usernameDisplay"
+        android:layout_marginTop="40dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_marginTop="160dp"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Go to home page"
+        android:id="@+id/buttonDone"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="toUserHome"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="#ffa9bcc7"
+        android:elegantTextHeight="false"
+        android:fontFamily="sans-serif-thin"
+        android:textAllCaps="false"/>
+</LinearLayout>

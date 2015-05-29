@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/search_activity_padding"
+    android:orientation="vertical"
+    tools:context=".SearchPage">
+
+    <TextView
+        android:text="@string/search_page_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/textCreateAccount"
+        android:textColor="@android:color/white"
+        android:background="@color/dark_navy"/>
+
+    <TextView android:text="@string/search_instructional_text"
+        android:gravity="center"
+        android:textSize="@dimen/search_instructional_text_size"
+        android:paddingLeft="@dimen/search_instructional_side_padding"
+        android:paddingRight="@dimen/search_instructional_side_padding"
+        android:paddingTop="@dimen/search_view_spacing"
+        android:paddingBottom="@dimen/search_view_spacing"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <SearchView
+        android:id="@+id/masterSearch"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/search_view_spacing"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:inputType="textAutoComplete"
+        />
+</LinearLayout>

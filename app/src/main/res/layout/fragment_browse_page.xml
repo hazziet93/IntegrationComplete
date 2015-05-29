@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserHome$BrowseFragment">
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height= "?android:attr/actionBarSize"
+        android:id="@+id/action_height"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="#ffa9bcc7">
+
+
+        <!--This layout contains the categories view-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:visibility="gone"
+            android:id="@+id/filterLayout">
+
+
+            <!--Title for the categories view-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FilterTitle"
+                android:text="@string/filterTitle"
+                android:textColor="@color/white"
+                android:padding= "5dp"
+                android:background="@color/dark_navy"
+                android:fontFamily="sans-serif-thin"
+                android:layout_marginBottom="5dp"
+                android:textSize="35sp"
+                android:textIsSelectable="false"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+
+            <!--The checkboxes below are connected to all possible societies in the current system-->
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_1"
+                android:id="@+id/checkBox1"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_2"
+                android:id="@+id/checkBox2"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_3"
+                android:id="@+id/checkBox3"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:paddingTop="8dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_4"
+                android:id="@+id/checkBox4"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:paddingTop="8dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_5"
+                android:id="@+id/checkBox5"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:paddingTop="8dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_6"
+                android:id="@+id/checkBox6"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_7"
+                android:id="@+id/checkBox7"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_8"
+                android:id="@+id/checkBox8"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <!--This button is used to hide the categories view and present the societies view-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filterComplete"
+                android:id="@+id/filterCompleteButton"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/dark_navy"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-thin"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <!--This layout contains the societies view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scrollingLayout">
+
+            <!--This view allows the list of societies to scroll-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_gravity="end"/>
+
+
+
+
+            <!--This is the title of the societies page-->
+            <TextView
+                android:text="@string/societiesTitle"
+                android:id="@+id/societiesTitle"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:background="#ff1e4a6e"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-thin"/>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <!--This is the list of societies-->
+            <ListView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/browseListView"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                android:clickable="true"
+                android:background="@drawable/border"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+    <!--This button allows the user to open the categories view-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filterButton"
+        android:textColor="@color/white"
+        android:background="@color/dark_navy"
+        android:textSize="35sp"
+        android:id="@+id/filterButton"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-thin"/>
+
+</LinearLayout>

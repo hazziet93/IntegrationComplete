@@ -1,0 +1,112 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:weightSum="1"
+        tools:context=".LoginHandler">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/login_main_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center_horizontal"
+            android:background="#ff1e4a6e"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"
+            />
+
+
+        <!--  Email  -->
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:text="@string/login_email_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"
+            android:layout_marginTop="5dip"
+            android:maxLength="30"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:ems="10"
+            android:id="@+id/editEmail" />
+
+        <!--  Password  -->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/login_pass_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_pass"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="30"
+            android:id="@+id/editPassword" />
+
+        <!--  Login Button  -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="@string/login_socbox"
+            android:layout_gravity="center_horizontal"
+            android:onClick="toLoggedIn"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#ffa9bcc7"
+            android:elegantTextHeight="false"
+            android:fontFamily="sans-serif-thin"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:text="@string/sign_up_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"/>
+
+        <!--  Link to register Button -->
+        <Button
+            android:id="@+id/buttonToRegisterPage"
+            android:text="@string/link_to_register"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_width="151dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#ffa9bcc7"
+            android:fontFamily="sans-serif-thin"/>
+
+    </LinearLayout>
