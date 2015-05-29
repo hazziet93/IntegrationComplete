@@ -1,34 +1,36 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
 
+    <!--  Title  -->
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/login_main_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:background="#ff1e4a6e"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-thin"
+
+        />
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:padding="30dp"
-        android:weightSum="1"
-        tools:context=".LoginHandler">
-
-        <TextView
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="@string/login_main_description"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:gravity="center_horizontal"
-            android:background="#ff1e4a6e"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"
-            />
-
-
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
         <!--  Email  -->
 
         <TextView
-            android:layout_marginTop="70dp"
             android:text="@string/login_email_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,23 +38,23 @@
             android:gravity="bottom"
             android:textSize="20sp"
             android:textColor="@android:color/black"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_email"
-            android:layout_marginTop="5dip"
+            android:layout_marginTop="2dip"
             android:maxLength="30"
             android:layout_gravity="center_horizontal"
+            android:ems="10"
             android:inputType="textEmailAddress"
             android:singleLine="true"
-            android:ems="10"
-            android:id="@+id/editEmail" />
+            android:id="@+id/editEmail"/>
 
         <!--  Password  -->
         <TextView
-            android:layout_marginTop="20dp"
             android:text="@string/login_pass_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,50 +65,62 @@
             android:layout_gravity="center_horizontal" />
 
         <EditText
-
+            android:singleLine="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/enter_pass"
-            android:layout_marginTop="5dip"
+            android:layout_marginTop="2dip"
             android:layout_gravity="center_horizontal"
             android:maxLength="30"
             android:id="@+id/editPassword" />
 
         <!--  Login Button  -->
         <Button
-            android:id="@+id/buttonLogin"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="2dp"
             android:layout_width="wrap_content"
-            android:layout_height="33dp"
+            android:layout_height="wrap_content"
             android:text="@string/login_socbox"
             android:layout_gravity="center_horizontal"
+            android:id="@+id/buttonLogin"
             android:onClick="toLoggedIn"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:background="#ffa9bcc7"
             android:elegantTextHeight="false"
-            android:fontFamily="sans-serif-thin"/>
+            android:fontFamily="sans-serif-thin"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:gravity="center|bottom"
+        android:layout_gravity="center_horizontal">
 
         <TextView
-            android:layout_marginTop="50dp"
             android:text="@string/sign_up_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
             android:textSize="15sp"/>
-
-        <!--  Link to register Button -->
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/go_to_create_account"
             android:id="@+id/buttonToRegisterPage"
-            android:text="@string/link_to_register"
-            android:textAllCaps="false"
-            android:layout_marginTop="5dp"
-            android:layout_width="151dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center_horizontal"
             android:textColor="@color/black"
             android:textStyle="bold"
+            android:textAllCaps="false"
             android:background="#ffa9bcc7"
-            android:fontFamily="sans-serif-thin"/>
-
+            android:fontFamily="sans-serif-thin"
+            />
     </LinearLayout>
+
+
+
+</LinearLayout>

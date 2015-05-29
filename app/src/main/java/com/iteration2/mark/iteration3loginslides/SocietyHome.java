@@ -2,7 +2,6 @@ package com.iteration2.mark.iteration3loginslides;
 
         import android.app.Activity;
         import android.content.Intent;
-        import android.graphics.Bitmap;
         import android.os.Bundle;
         import android.view.Menu;
         import android.view.MenuItem;
@@ -10,13 +9,7 @@ package com.iteration2.mark.iteration3loginslides;
         import android.widget.Button;
         import android.widget.ImageButton;
         import android.widget.LinearLayout;
-        import android.widget.TableLayout;
         import android.widget.TextView;
-
-        import com.nostra13.universalimageloader.core.DisplayImageOptions;
-        import com.nostra13.universalimageloader.core.ImageLoader;
-        import com.nostra13.universalimageloader.core.assist.ImageSize;
-        import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
         import java.util.ArrayList;
 
@@ -128,7 +121,7 @@ public class SocietyHome extends Activity {
                 //This will be connected to the societies presentation slide pages, for now it
                 //goes to the example activity to show the link works
                 //To attach this to the presentation slide pages, replace "ExampleActivity" with that
-                Intent intent = new Intent(SocietyHome.this, VideoBankHandler.class);
+                Intent intent = new Intent(SocietyHome.this, BankHandler.class);
                 //Attach the society name
                 intent.putExtra("NameOfSociety", societyName);
                 //Start the activity
@@ -154,7 +147,7 @@ public class SocietyHome extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(SocietyHome.this, ImageBank.class);
+                Intent intent = new Intent(SocietyHome.this, BankHandler.class);
                 intent.putExtra("NameOfSociety", societyName);
                 startActivity(intent);
             }

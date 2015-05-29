@@ -121,11 +121,6 @@ public class MainActivity extends ActionBarActivity {
         text = (TextView)popUpView.findViewById(R.id.popUpText);
 
         if((passEntered.matches(""))&&(!mailEntered.matches(""))){
-            //loginMessage = "password not entered";
-            text.setText("empty pass real mail");
-        }
-        else if((mailEntered.matches(""))&&(!passEntered.matches(""))){
-            //loginMessage = "E-Mail not entered";
             text.setText("empty mail real pass");
         }
         else if((mailEntered.matches(""))&&(passEntered.matches(""))){

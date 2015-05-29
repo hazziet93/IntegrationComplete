@@ -79,7 +79,7 @@
         android:label="@string/title_activity_example" >
     </activity>
     <activity
-        android:name=".VideoBankHandler"
+        android:name=".BankHandler"
         android:label="@string/title_activity_video_bank_handler" >
     </activity>
     <activity

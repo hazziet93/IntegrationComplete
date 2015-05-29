@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     android:stretchColumns="*"
@@ -23,12 +21,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="3dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
         android:layout_weight="0.2"
         />
 
     <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="10dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -59,6 +57,8 @@
     </LinearLayout>
 
     <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:layout_marginTop="5dp"
             android:id="@+id/societyDescription"
             android:textSize="12sp"
@@ -70,6 +70,8 @@
             android:background="@drawable/border"/>
 
     <TableLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:layout_marginTop="5dp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

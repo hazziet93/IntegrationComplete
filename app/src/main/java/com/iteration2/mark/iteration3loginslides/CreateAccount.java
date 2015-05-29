@@ -384,7 +384,7 @@ public class CreateAccount extends ActionBarActivity {
     public void addValidAccount() {
         final Dialog dialog = new Dialog(CreateAccount.this);
         dialog.setContentView(R.layout.activity_valid_account);
-        dialog.setTitle("Account Create");
+        dialog.setTitle("Account Created");
 
         final TextView accCreate = (TextView)dialog.findViewById(R.id.accCreateText);
         final Button buttonCreate = (Button)dialog.findViewById(R.id.buttonOk);
