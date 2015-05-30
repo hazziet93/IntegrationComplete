@@ -2,11 +2,13 @@ package com.iteration2.mark.iteration3loginslides;
 
         import android.app.Activity;
         import android.os.Bundle;
+        import android.support.v7.app.ActionBarActivity;
         import android.view.Menu;
         import android.view.MenuItem;
 
 
-public class ExampleActivity extends Activity {
+
+public class ExampleActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

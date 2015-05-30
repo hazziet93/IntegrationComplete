@@ -3,6 +3,7 @@ package com.iteration2.mark.iteration3loginslides;
         import android.app.Activity;
         import android.content.Intent;
         import android.os.Bundle;
+        import android.support.v7.app.ActionBarActivity;
         import android.view.View;
         import android.widget.Button;
         import android.widget.EditText;
@@ -13,7 +14,7 @@ package com.iteration2.mark.iteration3loginslides;
  *
  * Example homescreen
  */
-public class HomeScreen extends Activity {
+public class HomeScreen extends ActionBarActivity {
 
     private TextView txtName;
     private TextView txtEmail;

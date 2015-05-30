@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="30dp"
-    android:paddingBottom="30dp"
     android:orientation="vertical"
-    tools:context=".RegisterAccountPage">
+    tools:context=".RegisterAccountPage"
+    android:background="@color/light_navy">
 
 
         <!--  Title  -->
@@ -23,12 +23,13 @@
             android:fontFamily="sans-serif-thin"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1">
+        android:layout_weight="3"
+        android:background="@color/white">
 
 
         <!--  Set Email  -->
@@ -98,25 +99,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/universitySpinner" />
+            android:id="@+id/universitySpinner"
+            android:background="@drawable/spnrborder"/>
+      </LinearLayout>
 
         <!--  Button Done -->
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        android:gravity="center|bottom">
+
 
         <Button
-            android:layout_margin="5dp"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="37dp"
             android:text="@string/done"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:id="@+id/buttonDone"
             android:layout_gravity="center_horizontal"
             android:onClick="toAccountCreated"
-            android:background="@color/light_navy"
+            android:background="@color/dark_navy"
             android:textAllCaps="false"
             android:fontFamily="sans-serif-thin"/>
         </LinearLayout>
+
     </LinearLayout>
 
 

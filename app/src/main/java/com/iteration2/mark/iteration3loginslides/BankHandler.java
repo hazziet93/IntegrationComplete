@@ -3,6 +3,7 @@ package com.iteration2.mark.iteration3loginslides;
         import android.app.Activity;
         import android.content.Intent;
         import android.os.Bundle;
+        import android.support.v7.app.ActionBarActivity;
         import android.view.Menu;
         import android.view.MenuItem;
         import android.view.View;
@@ -17,7 +18,7 @@ package com.iteration2.mark.iteration3loginslides;
         import java.util.List;
 
 
-public class BankHandler extends Activity {
+public class BankHandler extends ActionBarActivity {
 
     private List<List_Item> myVideo = new ArrayList<List_Item>();
     public ListView listView;
@@ -120,11 +121,21 @@ public class BankHandler extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_home_menu:
+                backHome();
+                return true;
+            case R.id.action_settings:
+                //action for setting
+                return true;
+            default:
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void backHome() {
+        Intent backHome = new Intent(BankHandler.this, UserHome.class);
+        startActivity(backHome);
     }
 }

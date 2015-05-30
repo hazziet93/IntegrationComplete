@@ -2,8 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_navy"
     android:paddingTop="30dp">
 
     <TextView
@@ -18,38 +21,61 @@
         android:textColor="@android:color/white"
         android:fontFamily="sans-serif-thin"/>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+>
+
     <TextView
-        android:layout_marginTop="70dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:text="Logged in as:"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@android:color/black"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        />
 
     <TextView
-
+        android:layout_margin="20dp"
         android:id="@+id/usernameDisplay"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:gravity="center_horizontal"/>
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight="0">
     <Button
-        android:layout_marginTop="20dp"
-        android:layout_width="181dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Go to home page"
         android:id="@+id/buttonDone"
-        android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:onClick="toUserHome"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:background="#ffa9bcc7"
+        android:textColor="@color/white"
+        android:background="@color/dark_navy"
         android:elegantTextHeight="false"
         android:fontFamily="sans-serif-thin"
         android:textAllCaps="false"/>
+</LinearLayout>
 </LinearLayout>

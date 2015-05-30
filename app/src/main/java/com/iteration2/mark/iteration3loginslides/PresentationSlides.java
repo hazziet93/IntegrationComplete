@@ -1364,11 +1364,21 @@ public class PresentationSlides extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_home_menu:
+                backHome();
+                return true;
+            case R.id.action_settings:
+                //action for setting
+                return true;
+            default:
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void backHome() {
+        Intent backHome = new Intent(PresentationSlides.this, UserHome.class);
+        startActivity(backHome);
     }
 }

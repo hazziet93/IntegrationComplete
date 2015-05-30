@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -120,6 +121,7 @@ public class CreateAccount extends ActionBarActivity {
             public void onClick(View v) {
                 String email = inputEmail.getText().toString();
                 String password = inputPassword.getText().toString();
+                String university = inputUniversity.getSelectedItem().toString();
 
                 if ((email.matches("")) && (password.matches(""))) {
 //                    Toast toastText =
@@ -141,9 +143,15 @@ public class CreateAccount extends ActionBarActivity {
                                 "@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$")) {
 
                             if (inputPassword.length() > 5) {
-//                                registerUser(email, password);
-                                addValidAccount();
-                                new Login().execute();
+
+                                if(!university.isEmpty()){
+
+                                    new Login().execute();
+
+                                } else {
+                                    Toast.makeText(getApplicationContext(),
+                                            "Please Enter University!", Toast.LENGTH_SHORT).show();
+                                }
 
                             } else {
                                 inputPassword.setError("Password should be minimum 6 characters");
@@ -171,7 +179,7 @@ public class CreateAccount extends ActionBarActivity {
 
         ///////////////////////         A           //////////////////////////
 
-        list.add("Choose University");
+        list.add("");
         list.add("Aberystwyth University");
         list.add("Anglia Ruskin University");
         list.add("Aston University");
@@ -370,8 +378,34 @@ public class CreateAccount extends ActionBarActivity {
 
         ///////////////////////         Z           //////////////////////////
 
+        final int listSize = list.size() - 1;
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list) {
+            @Override
+            public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                View v = null;
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list);
+                // If this is the initial dummy entry, make it hidden
+                if (position == 0) {
+                    TextView tv = new TextView(getContext());
+                    tv.setHeight(0);
+                    tv.setVisibility(View.GONE);
+                    v = tv;
+                } else {
+                    // Pass convertView as null to prevent reuse of special case views
+                    v = super.getDropDownView(position, null, parent);
+                }
+
+                // Hide scroll bar because it appears sometimes unnecessarily, this does not prevent scrolling
+                parent.setVerticalScrollBarEnabled(false);
+                return v;
+            }
+
+            @Override
+            public int getCount() {
+                return (listSize);
+//                return super.getCount()-1; // you dont display last item. It is used as hint.
+            }
+        };
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         inputUniversity.setAdapter(dataAdapter);
 
@@ -385,6 +419,7 @@ public class CreateAccount extends ActionBarActivity {
         final Dialog dialog = new Dialog(CreateAccount.this);
         dialog.setContentView(R.layout.activity_valid_account);
         dialog.setTitle("Account Created");
+
 
         final TextView accCreate = (TextView)dialog.findViewById(R.id.accCreateText);
         final Button buttonCreate = (Button)dialog.findViewById(R.id.buttonOk);

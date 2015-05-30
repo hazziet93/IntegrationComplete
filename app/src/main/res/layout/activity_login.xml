@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="30dp">
+    android:paddingTop="30dp"
+    android:background="@color/light_navy">
 
     <!--  Title  -->
     <TextView
@@ -18,16 +19,16 @@
         android:gravity="center_horizontal"
         android:background="#ff1e4a6e"
         android:textColor="@android:color/white"
-        android:fontFamily="sans-serif-thin"
+        android:fontFamily="sans-serif-thin"/>
 
-        />
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="3"
         android:gravity="center"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white">
         <!--  Email  -->
 
         <TextView
@@ -42,7 +43,7 @@
             />
 
         <EditText
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/enter_email"
             android:layout_marginTop="2dip"
@@ -83,24 +84,25 @@
             android:layout_gravity="center_horizontal"
             android:id="@+id/buttonLogin"
             android:onClick="toLoggedIn"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:background="#ffa9bcc7"
+            android:background="@color/dark_navy"
             android:elegantTextHeight="false"
             android:fontFamily="sans-serif-thin"
             android:textAllCaps="false"/>
+
     </LinearLayout>
 
     <LinearLayout
-        android:padding="5dp"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="3"
+        android:layout_weight="0"
         android:gravity="center|bottom"
         android:layout_gravity="center_horizontal">
 
         <TextView
+            android:paddingTop="5dp"
             android:text="@string/sign_up_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -108,15 +110,15 @@
             android:textColor="@color/black"
             android:textSize="15sp"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/go_to_create_account"
             android:id="@+id/buttonToRegisterPage"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:background="#ffa9bcc7"
+            android:background="@color/dark_navy"
             android:fontFamily="sans-serif-thin"
             />
     </LinearLayout>

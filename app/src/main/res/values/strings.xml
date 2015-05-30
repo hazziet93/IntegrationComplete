@@ -99,6 +99,9 @@
     <string name="login_socbox">Go</string>
     <string name="go_to_create_account">Create Account</string>
 
+    <string name="home">Home</string>
+
+
 
 </resources>
 

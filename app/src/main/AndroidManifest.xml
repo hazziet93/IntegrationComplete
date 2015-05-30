@@ -44,7 +44,8 @@
         </activity>
         <activity
             android:name=".CreateAccount"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:parentActivityName=".LoginPage">
         </activity>
         <activity
             android:name=".UserHome"
@@ -72,23 +73,28 @@
 
     <activity
         android:name=".SocietyHome"
-        android:label="@string/title_activity_society_home_page" >
+        android:label="@string/title_activity_society_home_page"
+        android:parentActivityName=".UserHome">
     </activity>
     <activity
         android:name=".ExampleActivity"
-        android:label="@string/title_activity_example" >
+        android:label="@string/title_activity_example"
+        android:parentActivityName=".SocietyHome">
     </activity>
     <activity
         android:name=".BankHandler"
-        android:label="@string/title_activity_video_bank_handler" >
+        android:label="@string/title_activity_video_bank_handler"
+        android:parentActivityName=".SocietyHome">
     </activity>
     <activity
         android:name=".callVideoHandler"
-        android:label="@string/title_activity_call_video_handler" >
+        android:label="@string/title_activity_call_video_handler"
+        android:configChanges="screenSize|keyboardHidden|orientation">
     </activity>
     <activity
         android:name=".PresentationSlides"
-        android:label="presentationSlides" >
+        android:label="presentationSlides"
+        android:parentActivityName=".SocietyHome">
     </activity>
     <activity
         android:name=".SlideA"
@@ -128,7 +134,8 @@
     </activity>
     <activity
         android:name=".ImageBank"
-        android:label="ImageBank" >
+        android:label="ImageBank"
+        android:parentActivityName=".SocietyHome">
     </activity>
     <activity
         android:name=".ComPresSlideMethods"

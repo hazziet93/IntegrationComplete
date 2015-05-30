@@ -92,7 +92,7 @@ Possible Improvements:
 */
 
 
-public class SearchPage extends Activity {
+public class SearchPage extends ActionBarActivity {
 
     //===========================================================================================%
     @Override
