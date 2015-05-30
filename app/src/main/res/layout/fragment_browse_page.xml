@@ -50,6 +50,12 @@
                 android:singleLine="true"
                 android:gravity="center"/>
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_gravity="end"/>
+
             <LinearLayout
                 android:layout_margin="5dp"
                 android:orientation="vertical"
