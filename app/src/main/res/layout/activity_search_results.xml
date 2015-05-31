@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
     android:orientation="vertical"
+    android:background="@color/light_navy"
     tools:context="com.socbox.richard.searchfunction.SearchResults">
 
     <TextView
@@ -17,6 +17,7 @@
         android:background="#ff1e4a6e"
         android:textColor="@android:color/white"
         android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="16dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp">
     </TextView>
@@ -34,10 +35,11 @@
 
         android:id="@+id/noresultstext"
         android:layout_below="@id/results_title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/no_results_text"
         android:textColor="@color/black"
+        android:background="@drawable/border"
         android:textStyle="bold"
         android:textSize="@dimen/no_results_text_size"
         android:layout_centerHorizontal="true"

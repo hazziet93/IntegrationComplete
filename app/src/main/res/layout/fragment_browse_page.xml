@@ -19,8 +19,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
         android:background="#ffa9bcc7">
 
 
@@ -28,10 +26,11 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:visibility="gone"
-            android:id="@+id/filterLayout">
+            android:id="@+id/filterLayout"
+           android:visibility="gone">
+
 
             <!--Title for the categories view-->
             <TextView
@@ -43,7 +42,6 @@
                 android:padding= "5dp"
                 android:background="@color/dark_navy"
                 android:fontFamily="sans-serif-thin"
-                android:layout_marginBottom="5dp"
                 android:textSize="35sp"
                 android:textIsSelectable="false"
                 android:layout_gravity="center_horizontal"
@@ -54,19 +52,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/scroll_listView"
-                android:layout_gravity="end">
+                android:layout_gravity="end"
+                android:paddingLeft="2dp"
+                android:layout_weight="3"
+
+                android:background="@drawable/border">
 
             <LinearLayout
-                android:layout_margin="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
                 android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border">
+                android:background="@color/white">
 
 
             <!--The checkboxes below are connected to all possible societies in the current system-->
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_1"
@@ -76,11 +82,11 @@
                 android:background="@color/white"
                 android:textColor="@color/black"
                 android:textSize="22sp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_2"
@@ -90,11 +96,11 @@
                 android:textSize="22sp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_3"
@@ -102,13 +108,13 @@
                 android:layout_gravity="left"
                 android:gravity="center_vertical"
                 android:textSize="22sp"
-                android:paddingTop="8dp"
+                android:paddingTop="5dp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_4"
@@ -116,13 +122,13 @@
                 android:layout_gravity="left"
                 android:gravity="center_vertical"
                 android:textSize="22sp"
-                android:paddingTop="8dp"
+                android:paddingTop="5dp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_5"
@@ -130,13 +136,13 @@
                 android:layout_gravity="left"
                 android:gravity="center_vertical"
                 android:textSize="22sp"
-                android:paddingTop="8dp"
+                android:paddingTop="5dp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_6"
@@ -146,11 +152,11 @@
                 android:textSize="22sp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_7"
@@ -160,11 +166,11 @@
                 android:textSize="22sp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
 
             <CheckBox
-                android:layout_marginLeft="1dp"
+                android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/category_8"
@@ -174,8 +180,8 @@
                 android:textSize="22sp"
                 android:background="@color/white"
                 android:textColor="@color/black"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
 
 
             </LinearLayout>
@@ -189,7 +195,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/filterComplete"
                 android:id="@+id/filterCompleteButton"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="center"
                 android:background="@color/dark_navy"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -209,14 +216,6 @@
             android:id="@+id/scrollingLayout">
 
             <!--This view allows the list of societies to scroll-->
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/scrollView"
-                android:layout_gravity="end"/>
-
-
-
 
             <!--This is the title of the societies page-->
             <TextView
@@ -235,17 +234,12 @@
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="sans-serif-thin"/>
 
-
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="#000000"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
             <!--This is the list of societies-->
             <ListView
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/browseListView"
@@ -253,6 +247,10 @@
                 android:visibility="visible"
                 android:clickable="true"
                 android:background="@drawable/border"/>
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
@@ -274,6 +272,9 @@
         android:id="@+id/filterButton"
         android:textAllCaps="false"
         android:layout_gravity="center_horizontal"
-        android:fontFamily="sans-serif-thin"/>
+        android:fontFamily="sans-serif-thin"
+
+        />
+
 
 </LinearLayout>

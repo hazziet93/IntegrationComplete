@@ -4,15 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
     android:stretchColumns="*"
+    android:background="@color/light_navy"
     android:shrinkColumns="true"
     >
 
     <TextView
         android:id="@+id/societyTitle"
-        android:textSize="40sp"
+        android:textSize="20sp"
+        android:paddingBottom="2dp"
         android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
         android:background="#ff1e4a6e"
@@ -20,19 +22,20 @@
         android:fontFamily="sans-serif-thin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="3dp"
+        android:paddingTop="2dp"
         android:layout_weight="0.2"
         />
 
     <LinearLayout
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
         android:layout_marginTop="10dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="2"
+        android:background="@drawable/test2">
     <Button
         android:id="@+id/subscribeButton"
         android:layout_width="wrap_content"
@@ -43,30 +46,31 @@
         android:textStyle="bold"
         android:textAllCaps="false"
         android:background="@color/light_navy"
-        android:layout_weight="0.44" />
+        android:layout_weight="3" />
 
         <ImageButton
             android:id="@+id/exampleSocietyButton2"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_width="30dp"
+            android:scaleType="centerInside"
             android:layout_marginRight="10dp"
-            android:src="@drawable/ic_apple"
+            android:src="@drawable/presentation_button"
             android:background="#00ffffff"
-            android:layout_weight="1" />
+            android:layout_weight="2" />
 
     </LinearLayout>
 
     <TextView
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
             android:layout_marginTop="5dp"
             android:id="@+id/societyDescription"
             android:textSize="12sp"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="170dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:background="@drawable/border"/>
 
     <TableLayout
@@ -84,26 +88,29 @@
 
             <ImageButton
                 android:id="@+id/exampleSocietyButton3"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:src="@drawable/ic_apple"
+                android:layout_height="match_parent"
+                android:layout_width="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_button"
                 android:background="@color/light_navy"
                 android:layout_column="0"
              />
 
                 <ImageButton
             android:id="@+id/exampleSocietyButton1"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_apple"
+            android:layout_height="match_parent"
+            android:layout_width="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/video_button"
             android:background="@color/light_navy"
             android:layout_column="1"/>
 
                 <ImageButton
             android:id="@+id/exampleSocietyButton4"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_apple"
+            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/updates_button"
             android:background="@color/light_navy"
             android:layout_column="2"/>
             </TableRow>

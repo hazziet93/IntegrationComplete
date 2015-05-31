@@ -3,6 +3,8 @@ package com.iteration2.mark.iteration3loginslides;
         import android.app.Activity;
         import android.content.Intent;
         import android.os.Bundle;
+        import android.graphics.Bitmap;
+        import android.graphics.BitmapFactory;
         import android.support.v7.app.ActionBarActivity;
         import android.view.Menu;
         import android.view.MenuItem;
@@ -12,7 +14,14 @@ package com.iteration2.mark.iteration3loginslides;
         import android.widget.ArrayAdapter;
         import android.widget.ImageView;
         import android.widget.ListView;
+        import java.io.InputStream;
         import android.widget.TextView;
+
+        import org.apache.http.HttpEntity;
+        import org.apache.http.HttpResponse;
+        import org.apache.http.client.ClientProtocolException;
+        import org.apache.http.client.methods.HttpGet;
+        import org.apache.http.impl.client.DefaultHttpClient;
 
         import java.util.ArrayList;
         import java.util.List;
